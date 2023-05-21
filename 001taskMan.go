@@ -43,3 +43,10 @@ func (tmr *TaskMemoRepo) Create(ctx context.Context, NewTask *Task) error {
 	tmr.tasks[NewTask.ID] = NewTask //a TaskMemoRepo-ban levo most generalt ID kulcsnak megadom a newTask valtozot ertekparnak
 	return nil
 }
+
+/*
+func (tmr *TaskMemoRepo) FindByID(ctx context.Context, ID string) (_ Task, found bool, _ error) {
+	task, found :=
+	return task, true, nil
+}
+*/
